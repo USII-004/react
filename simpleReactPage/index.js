@@ -1,4 +1,4 @@
-function navbar() {
+function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">Navbar</a>
@@ -44,6 +44,18 @@ function navbar() {
   )
 }
 
+function MainContent() {
+  return (
+    <h1>This is my main content!!!</h1>
+  )
+}
+
+ReactDOM.render(
+                <div>
+                  <Navbar />
+                  <MainContent />
+                </div>, document.getElementById('nav'))
+
 
 ReactDOM.render(<h1>Hello, this is my first using React</h1>, document.getElementById('root'))
 
@@ -57,3 +69,17 @@ ReactDOM.render(<ul>
                   <li>render</li>
                 </ul>, document.getElementById('list'))
 
+
+
+const navigation = (
+  <nav>
+    <h1>This is a navigation</h1>
+    <ul>
+      <li>Prizing</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav> 
+)
+
+ReactDOM.render(navigation, document.getElementById('navigation'))
